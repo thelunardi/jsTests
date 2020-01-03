@@ -18,7 +18,7 @@ isPasswordValid = (password) => {
 }
 
 isPasswordValid('Abc@123')
-isPasswordValid('Abc123')
+isPasswordValid('Abc1234')
 
 isDatePtBrValid = (date) => {
     if (/\d{2}\/\d{2}\/\d{4}/.test(date)) {
@@ -29,7 +29,7 @@ isDatePtBrValid = (date) => {
 }
 
 isDatePtBrValid("11/11/1211")
-isDatePtBrValid("1111/11/21")
+isDatePtBrValid("3111/11/21")
 
 isPhoneValid = (phone) => {
     if (/^[\\(]\d{2}[\\)]\d{5}-\d{4}$/.test(phone)) {
