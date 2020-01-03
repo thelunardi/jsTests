@@ -37,3 +37,12 @@ testVoid = () => {
 }
 console.log("initial return ~>", testVoid())
 console.log("void nullifies ~>", (void testVoid()))
+
+//var e let no for - setTimeout
+for (var i = 0; i < 3; i++) {
+    setTimeout(() => console.log(i))
+}
+
+for (let i = 0; i < 3; i++) {
+    setTimeout(() => console.log(i))
+}
