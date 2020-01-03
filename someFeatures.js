@@ -40,9 +40,18 @@ console.log("void nullifies ~>", (void testVoid()))
 
 //var e let no for - setTimeout
 for (var i = 0; i < 3; i++) {
-    setTimeout(() => console.log(i))
+    setTimeout(() => console.log("var e let ~>", i))
 }
 
 for (let i = 0; i < 3; i++) {
-    setTimeout(() => console.log(i))
+    setTimeout(() => console.log("var e let ~>", i))
 }
+
+//imprimir as variáveis antes de declarar - var e let
+sayHy = () => {
+    console.log("var e let ~>", name)
+    //console.log(age) - ReferenceError
+    var name = "Lele"
+    let age = 21
+}
+sayHy()
