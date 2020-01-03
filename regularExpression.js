@@ -39,8 +39,8 @@ isPhoneValid = (phone) => {
     console.log("Telefone inválido!")    
 }
 
-isPhoneValid("(32)99989-9989")
-isPhoneValid("(32)9 9989-9989")
+isPhoneValid("(32)99999-9989")
+isPhoneValid("(32)9 9999-9989")
 
 isBranchNameValid = (name) => {
     if (/^[a-zA-Z]+-[0-9]+$/.test(name)) {
