@@ -18,7 +18,7 @@ isPasswordValid = (password) => {
 }
 
 isPasswordValid('Abc@123')
-isPasswordValid('Abc123')
+isPasswordValid('Abc1234')
 
 isDatePtBrValid = (date) => {
     if (/\d{2}\/\d{2}\/\d{4}/.test(date)) {
@@ -28,8 +28,8 @@ isDatePtBrValid = (date) => {
     console.log("Data inválida!")    
 }
 
-isDatePtBrValid("11/11/1111")
-isDatePtBrValid("1111/11/11")
+isDatePtBrValid("11/11/1211")
+isDatePtBrValid("3111/11/21")
 
 isPhoneValid = (phone) => {
     if (/^[\\(]\d{2}[\\)]\d{5}-\d{4}$/.test(phone)) {
@@ -39,8 +39,8 @@ isPhoneValid = (phone) => {
     console.log("Telefone inválido!")    
 }
 
-isPhoneValid("(32)99989-9989")
-isPhoneValid("(32)9 9989-9989")
+isPhoneValid("(32)99999-9949")
+isPhoneValid("(32)9 9999-9939")
 
 isBranchNameValid = (name) => {
     if (/^[a-zA-Z]+-[0-9]+$/.test(name)) {
