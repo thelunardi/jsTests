@@ -28,8 +28,8 @@ isDatePtBrValid = (date) => {
     console.log("Data inválida!")    
 }
 
-isDatePtBrValid("11/11/1111")
-isDatePtBrValid("1111/11/11")
+isDatePtBrValid("11/11/1211")
+isDatePtBrValid("1111/11/21")
 
 isPhoneValid = (phone) => {
     if (/^[\\(]\d{2}[\\)]\d{5}-\d{4}$/.test(phone)) {
