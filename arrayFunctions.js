@@ -67,3 +67,7 @@ let textoValueOf = vetor11.valueOf()
 let textoToString = vetor11.toString()
 console.log(`valueOf ~> ${vetor11}`)
 console.log(`toString ~> ${vetor11}`)
+
+//flatMap - first mapping and then flat
+const vetor12 = new Array("Dick", "Jane")
+console.log("flat ~>", vetor12.flatMap((name, index) => [name, index]))
