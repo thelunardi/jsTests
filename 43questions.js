@@ -34,3 +34,17 @@ console.log("3 - this ~>", shape.perimeter())
 //4 - true, false NaN?
 console.log("4 - true, false NaN ~>", +true)
 console.log("4 - true, false NaN ~>", !"Lydia")
+
+//5 - qual é verdadeiro?
+const bird = {
+    size: "small"
+}
+
+const mouse = {
+    name: "Mickey",
+    small: true
+}
+
+//console.log("5 - true ~>", mouse.bird.size)
+console.log("5 - true ~>", mouse[bird.size])
+console.log("5 - true ~>", mouse[bird["size"]])
