@@ -49,3 +49,38 @@ const mouse = {
 // console.log("5 - true ~>", mouse.bird.size)
 console.log('5 - true ~>', mouse[bird.size])
 console.log('5 - true ~>', mouse[bird.size])
+
+// 6 - atribuição
+const c = { greeting: 'Hey' }
+const d = c
+
+c.greeting = 'Hello'
+console.log('6 - atribuição ~>', d.greeting)
+
+// 7 - comparação em JS
+const x = 3
+// eslint-disable-next-line no-new-wrappers
+const y = new Number(3)
+const z = 3
+
+// eslint-disable-next-line eqeqeq
+console.log('7 - comparação em JS ==', x == y)
+console.log('7 - comparação em JS ===', x === y)
+console.log('7 - comparação em JS ===', y === z)
+
+// 8 - static function
+class Chameleon {
+  static colorChange (newColor) {
+    this.newColor = newColor
+    return this.newColor
+  }
+
+  constructor ({ newColor = 'green' } = {}) {
+    this.newColor = newColor
+  }
+}
+
+const freddie = new Chameleon({ newColor: 'purple' })
+console.log('8 - static function', freddie)
+// TypeError
+// console.log('8 - static function', freddie.colorChange('orange'))
