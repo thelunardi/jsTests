@@ -84,3 +84,24 @@ const freddie = new Chameleon({ newColor: 'purple' })
 console.log('8 - static function', freddie)
 // TypeError
 // console.log('8 - static function', freddie.colorChange('orange'))
+
+// 9 - defined variable
+// eslint-disable-next-line no-unused-vars
+let greeting
+// eslint-disable-next-line no-undef
+greetign = {}
+// eslint-disable-next-line no-undef
+console.log('9 - defined variable', greetign)
+
+// 10 - property function
+// eslint-disable-next-line no-undef
+bark = () => {
+  console.log('10 - property function', 'Woof')
+}
+
+// eslint-disable-next-line no-undef
+bark.animal = 'dog'
+// eslint-disable-next-line no-undef
+bark()
+// eslint-disable-next-line no-undef
+console.log('10 - property function', bark.animal)
