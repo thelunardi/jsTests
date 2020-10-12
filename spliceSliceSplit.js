@@ -2,14 +2,14 @@
 let example = ["A", "B", "C", "D"]
 example.splice(2, 0, "E")
 
-console.log(example)
+console.log("1 - add with splice", example)
 
 //remove 1 item a partir da posição 2 (2 incluído)
 //copyExample recebe o resultado e example é modificado
 let copyExample = example.splice(2, 1)
 
-console.log(example)
-console.log(copyExample)
+console.log("2 - modified array splice", example)
+console.log("3 - new array splice", copyExample)
 
 //slice - DON'T CHANGE the input and return a new copy
 let exampleTwo = ["A", "B", "C", "D"]
@@ -18,8 +18,8 @@ let exampleTwo = ["A", "B", "C", "D"]
 //copyExample recebe o resultado e example não é modificado
 let copyExampleTwo = exampleTwo.slice(1, 3)
 
-console.log(exampleTwo)
-console.log(copyExampleTwo)
+console.log("4 - not modified with slice", exampleTwo)
+console.log("5 - new array slice", copyExampleTwo)
 
 //split - SPLITS a string using a separator e, como opcional, o número de vezes que buscará o separator
 let text = "Olá, Mundo! Olá, Mundo! Olá, Mundo!"
@@ -28,5 +28,5 @@ let text = "Olá, Mundo! Olá, Mundo! Olá, Mundo!"
 //não modifica o array
 let newText = text.split(",", 3)
 
-console.log(text)
-console.log(newText)
+console.log("6 - not modified with split", text)
+console.log("7 - new array split", newText)
